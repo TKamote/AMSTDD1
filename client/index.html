@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ams App</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Ams App</h1>
+    <form id="amsForm">
+      <label for="image">Image:</label>
+      <input type="file" id="image" name="image"><br>
+
+      <label for="text">Text (20 words):</label>
+      <input type="text" id="text" name="text" maxlength="20"><br>
+
+      <label for="severity">Severity:</label>
+      <select id="severity" name="severity" multiple>
+        <option value="Minor">Minor</option>
+        <option value="Advanced">Advanced</option>
+        <option value="Final Stage">Final Stage</option>
+      </select><br>
+
+      <label for="intensity">Intensity:</label>
+      <select id="intensity" name="intensity" multiple>
+        <option value="Intensity 1">Intensity 1</option>
+        <option value="Intensity 2">Intensity 2</option>
+        <option value="Intensity 3">Intensity 3</option>
+      </select><br>
+
+      <label for="extent">Extent:</label>
+      <select id="extent" name="extent" multiple>
+        <option value="Extent 1">Extent 1</option>
+        <option value="Extent 2">Extent 2</option>
+        <option value="Extent 3">Extent 3</option>
+        <option value="Extent 4">Extent 4</option>
+        <option value="Extent 5">Extent 5</option>
+      </select><br>
+
+      <input type="submit" value="Submit">
+    </form>
+    <button id="uploadBtn">Upload to Excel</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
